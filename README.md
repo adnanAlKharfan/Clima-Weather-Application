@@ -1,54 +1,76 @@
+# Clima
+This repository contains the source code for Clima, a weather application built using Swift. The app fetches real-time weather data for the user's current location or for a manually searched city using APIs.
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+## Introduction
 
-#  Clima
+Clima is an iOS application designed to provide real-time weather updates. The app supports both GPS-based location detection and manual city searches. It features a clean, dark-mode enabled interface and leverages several advanced Swift programming concepts.
 
-## Our Goal
+## Features
 
-It’s time to take our app development skills to the next level. We’re going to introduce you to the wonderful world of Application Programming Interfaces (APIs) to grab live data from the internet. If you’re dreaming of making that Twitter-powered stock trading app then you’re about add some serious tools to your toolbelt!
+- Real-time Weather Data: Fetches current weather data for the user's location or a manually entered city.
+  
+- Dark-mode Enabled: Supports dark-mode for a better user experience.
+  
+- GPS Integration: Uses Core Location to get the user's current location.
+  
+- Search Functionality: Allows users to search for weather updates by city name.
+  
+- Clean UI: Provides a simple and intuitive user interface.
+  
+## Requirements
 
+- iOS 13.0+
+  
+- Xcode 11+
+  
+- A valid API key for the weather service
+  
+## Installation
 
-## What you will create
+To set up the project on your local machine, follow these steps:
 
-By the end of the module, you will have made a beautiful, dark-mode enabled weather app. You'll be able to check the weather for the current location based on the GPS data from the iPhone as well as by searching for a city manually. 
+1. Clone the repository:
 
-## What you will learn
-
-* How to create a dark-mode enabled app.
-* How to use vector images as image assets.
-* Learn to use the UITextField to get user input. 
-* Learn about the delegate pattern.
-* Swift protocols and extensions. 
-* Swift guard keyword. 
-* Swift computed properties.
-* Swift closures and completion handlers.
-* Learn to use URLSession to network and make HTTP requests.
-* Parse JSON with the native Encodable and Decodable protocols. 
-* Learn to use Grand Central Dispatch to fetch the main thread.
-* Learn to use Core Location to get the current location from the phone GPS. 
-
-### Condition Codes
-```
-switch conditionID {
-        case 200...232:
-            return "cloud.bolt"
-        case 300...321:
-            return "cloud.drizzle"
-        case 500...531:
-            return "cloud.rain"
-        case 600...622:
-            return "cloud.snow"
-        case 701...781:
-            return "cloud.fog"
-        case 800:
-            return "sun.max"
-        case 801...804:
-            return "cloud.bolt"
-        default:
-            return "cloud"
-        }
+```sh
+git clone https://github.com/adnanAlKharfan/Clima-Weather-Application.git
 ```
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+2. Navigate to the project directory:
 
-![End Banner](Documentation/readme-end-banner.png)
+```sh
+cd Clima-Weather-Application
+```
+
+3. Open the project in Xcode:
+
+```sh
+open Clima.xcodeproj
+```
+
+4. Install dependencies using CocoaPods:
+
+```sh
+pod install
+```
+
+5. Configure API Key:
+
+Replace the placeholder API key in the relevant file with your own API key.
+
+## Usage
+
+1. Launch the app in Xcode:
+
+- Select the target device (e.g., iPhone simulator or connected device).
+  
+- Click on the run button or press Cmd + R to build and run the app.
+
+2. Fetch Weather Data:
+
+- Allow the app to access your location to get current weather updates.
+  
+- Use the search functionality to get weather updates for a specific city.
+
+## Contributing
+
+- Contributions are welcome! Feel free to open issues or submit pull requests.
